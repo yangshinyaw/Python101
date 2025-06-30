@@ -7,6 +7,7 @@ else:
     print("You are NOT eligible")
 '''
 
+'''
 response = input("Do you have any question/s? (Y/N): ")
 
 if response == "Y":
@@ -15,3 +16,11 @@ elif response == "N":
     print("You are good to go!")
 else:
     print("Try again!")
+'''
+
+is_student = False
+
+if is_student:
+    print("You are not allowed to enter the computer shop")
+else:
+    print("You may enter the shop")
