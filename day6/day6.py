@@ -18,6 +18,7 @@ else:
     print(f"{operator} is not valid")
 '''
 
+'''
 #Weight Conversion
 
 weight = float(input("Enter your weight: "))
@@ -33,5 +34,18 @@ elif unit == "L":
     print(f"Your weight is: {round(weight, 2)} {unit}")
 else:
     print(f"{unit} is not valid")
+'''
 
+#Temperature Conversion
+unit = input("Celcius (C) / Fahrenheit (F): ")
+temp = float(input("Enter the temperature: "))
+
+if unit == "C":
+    temp = round((9 * temp) / 5 + 32, 1)
+    print(f"The temperature in Fahrenheit is: {temp}")
+elif unit == "F":
+    temp = round((temp - 32) * 5 / 9, 1)
+    print(f"The temperature in Celcius is: {temp}")
+else:
+    print("The {unit} is invalid, please try again.")
 
